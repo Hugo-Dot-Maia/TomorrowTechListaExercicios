@@ -3,7 +3,12 @@ import java.util.Scanner;
 public class Menu {
 
     public static void decideLista(int lista){
+        ListaUm listaUm = new ListaUm();
+        switch (lista){
+            case 1 -> listaUm.executaLista();
 
+            default -> System.out.println("Não é uma lista válida");
+        }
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
