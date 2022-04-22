@@ -2,11 +2,31 @@ import java.util.Scanner;
 
 public class ListaUm {
 
-    public void exercicioUm(){
+
+    private void exercicioDois(){
+        System.out.println("--- Questão 2 ---");
+
+        Scanner sc = new Scanner(System.in);
+        double massa, altura, tempo;
+        System.out.print("Informe a massa: ");
+        massa = sc.nextDouble();
+        System.out.print("Informe a altura: ");
+        altura = sc.nextDouble();
+        System.out.print("Informe o tempo: ");
+        tempo = sc.nextDouble();
+
+        System.out.println("Quantidade de Cavalos é: " + ((massa * altura / tempo ) / 745.6999));
+
+        System.out.println("--- Fim Questão 2 ---");
+    }
+
+    private void exercicioUm(){
+        System.out.println("--- Questão 1 ---");
+
         Scanner sc = new Scanner(System.in);
         double celcius;
 
-        System.out.println("--- Questão 1 ---");
+
         System.out.print("Insira a temperatura em Celcius: ");
         celcius = sc.nextDouble();
 
@@ -22,6 +42,7 @@ public class ListaUm {
     public void executaLista(){
         System.out.println("----- Lista 1 -----");
         exercicioUm();
+        exercicioDois();
         System.out.println("----- Fim Lista 1 -----");
     }
 }
